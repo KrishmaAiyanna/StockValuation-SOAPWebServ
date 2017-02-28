@@ -1,0 +1,22 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+
+  <servlet>
+    <servlet-name>moveInvestment</servlet-name>
+    <servlet-class>com.krishma.service.moveInvestment</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>Client</servlet-name>
+    <servlet-class>com.krishma.client.Client</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>moveInvestment</servlet-name>
+    <url-pattern>/moveInvestment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Client</servlet-name>
+    <url-pattern>/Client</url-pattern>
+  </servlet-mapping>
+</web-app>
